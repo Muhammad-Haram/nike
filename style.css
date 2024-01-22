@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+#navBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #e5e5e5
+}
+
+.img img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.nav-text ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-text ul li {
+    list-style: none;
+    padding-right: 20px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.nav-text ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Hero section */
+
+#hero-sec {
+    display: flex;
+    
+}
+
+.shoes {
+    width: 10%;
+    height: 1100px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.shoes img {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.hero {
+    width: 90%;
+    padding: 27px 30px;
+}
+
+.hero .poster img {
+    width: 100%;
+}
+
+.banner{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.card{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box{
+    width: 30%;
+    margin-top: 20px;
+    background-color: #e5e5e5;
+    padding: 20px 20px;
+    border-radius: 40px;
+}
+
+.box .shoe-pic img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.box .text{
+    background-color: rgb(68, 68, 68);
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    margin-top: 5px
+}
+
+.box .text h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.box .text p{
+    margin-bottom: 5px;
+}
+
+.box .text i{
+    background-color: rgb(172, 170, 170);
+    color: black;
+    padding: 7px;
+    padding-left: 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.box .text i:hover{
+background-color: whitesmoke;
+}
+
+@media (max-width: 477px){
+
+    #navBar{
+        flex-direction: column;
+        padding: 20px 0px;
+        
+    }
+
+    .nav-text ul li {
+        list-style: none;
+        padding-right: 10px;
+        font-weight: 700;
+        transition: 0.5s;
+    }
+
+    .shoes {
+        display: none;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .banner{
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .card{
+
+        flex-direction: column;
+    }
+
+    .box{
+        width: 90%;
+        margin-top: 20px;
+        background-color: #e5e5e5;
+        padding: 20px 20px;
+        border-radius: 40px;
+    }
+    
+
+}
